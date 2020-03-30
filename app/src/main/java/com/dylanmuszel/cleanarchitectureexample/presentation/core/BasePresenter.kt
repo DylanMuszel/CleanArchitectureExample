@@ -6,7 +6,6 @@ import kotlinx.coroutines.cancel
 
 abstract class BasePresenter <T> : CoroutineScope by CoroutineScope(Dispatchers.Main) {
 
-
     protected var view: T? = null
 
     fun onCreate(view: T) {
