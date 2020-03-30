@@ -1,6 +1,8 @@
 package com.dylanmuszel.data
 
-import com.dylanmuszel.core.fp.*
+import arrow.core.Either
+import arrow.core.None
+import com.dylanmuszel.core.fp.Failure
 import com.dylanmuszel.domain.UserEntity
 import javax.inject.Inject
 
