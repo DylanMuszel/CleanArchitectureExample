@@ -6,6 +6,8 @@ interface LoginView {
 
     fun showServerError()
 
+    fun showNetworkConnectionError()
+
     fun showInvalidUserError()
 
     fun showEmptyEmailError()

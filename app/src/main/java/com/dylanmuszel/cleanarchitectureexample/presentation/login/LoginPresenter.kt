@@ -19,6 +19,7 @@ class LoginPresenter @Inject constructor(private val loginUseCase: LoginUseCase)
     private fun handleLoginFailure(failure: Failure) {
         when (failure) {
             Failure.ServerError -> view?.showServerError()
+            Failure.NetworkConnection -> view?.showNetworkConnectionError()
             is UserNetworkSource.InvalidUser -> view?.showInvalidUserError()
             is LoginUseCase.EmptyField -> {
                 if (failure.isEmailEmpty) view?.showEmptyEmailError()

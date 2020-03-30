@@ -25,9 +25,12 @@ class LoginFragment private constructor() : BaseFragment<FragmentLoginBinding, L
         flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
     })
 
-    override fun showServerError() =Toast.makeText(context, R.string.invalid_user_error, Toast.LENGTH_SHORT).show()
+    override fun showServerError() = Toast.makeText(context, R.string.invalid_user_error, Toast.LENGTH_SHORT).show()
 
-    override fun showInvalidUserError()= Toast.makeText(context, R.string.invalid_user_error, Toast.LENGTH_SHORT).show()
+    override fun showNetworkConnectionError() =
+        Toast.makeText(context, R.string.network_connection_error, Toast.LENGTH_SHORT).show()
+
+    override fun showInvalidUserError() = Toast.makeText(context, R.string.invalid_user_error, Toast.LENGTH_SHORT).show()
 
     override fun showEmptyEmailError() {
         binding.emailInput.error = getString(R.string.empty_email_error)
