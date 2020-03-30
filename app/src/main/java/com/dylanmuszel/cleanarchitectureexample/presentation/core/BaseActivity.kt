@@ -5,7 +5,7 @@ import androidx.fragment.app.commit
 import com.dylanmuszel.cleanarchitectureexample.R
 import dagger.android.support.DaggerAppCompatActivity
 
-abstract class BaseActivity(private val fragment: BaseFragment<*>) : DaggerAppCompatActivity() {
+abstract class BaseActivity(private val fragment: BaseFragment<*, *>) : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
