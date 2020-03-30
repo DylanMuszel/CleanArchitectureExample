@@ -26,6 +26,7 @@ class LoginViewModel(private val loginUseCase: LoginUseCase) : ViewModel() {
     private fun handleLoginFailure(failure: Failure) {
         _loginState.value = when (failure) {
             Failure.ServerError -> LoginState.ServerError
+            Failure.NetworkConnection -> LoginState.NetworkConnectionError
             is UserNetworkSource.InvalidUser -> LoginState.InvalidUser
             is LoginUseCase.EmptyField -> LoginState.EmptyField(failure.isEmailEmpty, failure.isUsernameEmpty)
             else -> throw IllegalStateException()

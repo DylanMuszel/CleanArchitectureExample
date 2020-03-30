@@ -1,6 +1,7 @@
 package com.dylanmuszel.cleanarchitectureexample.presentation.core.di
 
 import android.app.Application
+import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import androidx.lifecycle.ViewModel
@@ -13,6 +14,7 @@ import com.dylanmuszel.cleanarchitectureexample.presentation.splash.SplashModule
 import dagger.Module
 import dagger.Provides
 import javax.inject.Provider
+import javax.inject.Singleton
 
 @Module(
     includes = [
@@ -29,6 +31,11 @@ class AppModule {
     ): ViewModelProvider.Factory = AppViewModelFactory(providers)
 
     @Provides
+    @Singleton
     fun provideSharedPreferences(application: Application): SharedPreferences =
         application.getSharedPreferences(CleanArchitectureExampleApp.SHARED_PREFERENCES_NAME, MODE_PRIVATE)
+
+    @Provides
+    @Singleton
+    fun provideContext(application: Application): Context = application.applicationContext
 }

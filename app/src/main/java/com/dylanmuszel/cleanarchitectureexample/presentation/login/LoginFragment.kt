@@ -39,6 +39,8 @@ class LoginFragment private constructor() : BaseFragment<FragmentLoginBinding>()
             }
             LoginState.InvalidUser -> Toast.makeText(context, R.string.invalid_user_error, Toast.LENGTH_SHORT).show()
             LoginState.ServerError -> Toast.makeText(context, R.string.invalid_user_error, Toast.LENGTH_SHORT).show()
+            LoginState.NetworkConnectionError ->
+                Toast.makeText(context, R.string.network_connection_error, Toast.LENGTH_SHORT).show()
             LoginState.Success -> startActivity(PostsActivity.getStartIntent(requireContext()).apply {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             })

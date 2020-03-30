@@ -1,6 +1,7 @@
 package com.dylanmuszel.cleanarchitectureexample.framework.login
 
 import com.dylanmuszel.cleanarchitectureexample.framework.core.network.ApiInstance
+import com.dylanmuszel.cleanarchitectureexample.framework.core.network.ConnectivityInfo
 import com.dylanmuszel.cleanarchitectureexample.framework.core.sharedpreferences.SharedPreferencesManager
 import com.dylanmuszel.data.UserSession
 import com.dylanmuszel.data.UserSource
@@ -16,7 +17,10 @@ object UserModule {
 
     @JvmStatic
     @Provides
-    fun providesUserSource(userService: UserService): UserSource = UserNetworkSource(userService)
+    fun providesUserSource(
+        userService: UserService,
+        connectivityInfo: ConnectivityInfo
+    ): UserSource = UserNetworkSource(userService, connectivityInfo)
 
     @JvmStatic
     @Provides
