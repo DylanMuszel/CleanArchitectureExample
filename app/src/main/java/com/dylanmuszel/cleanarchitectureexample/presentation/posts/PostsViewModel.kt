@@ -1,14 +1,12 @@
 package com.dylanmuszel.cleanarchitectureexample.presentation.posts
 
-import android.content.Intent
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import arrow.core.None
 import com.dylanmuszel.cleanarchitectureexample.framework.login.User
 import com.dylanmuszel.cleanarchitectureexample.framework.login.toUser
-import com.dylanmuszel.cleanarchitectureexample.presentation.login.LoginActivity
-import com.dylanmuszel.core.fp.None
 import com.dylanmuszel.domain.UserEntity
 import com.dylanmuszel.usecases.login.GetLoggedUserUseCase
 import com.dylanmuszel.usecases.login.LogoutUseCase

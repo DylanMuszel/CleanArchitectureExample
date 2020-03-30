@@ -1,9 +1,12 @@
 package com.dylanmuszel.cleanarchitectureexample.presentation.login
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import arrow.core.None
 import com.dylanmuszel.cleanarchitectureexample.framework.login.UserNetworkSource
 import com.dylanmuszel.core.fp.Failure
-import com.dylanmuszel.core.fp.None
 import com.dylanmuszel.usecases.login.LoginUseCase
 import kotlinx.coroutines.launch
 
