@@ -3,7 +3,6 @@ package com.dylanmuszel.cleanarchitectureexample.presentation.core.di
 import android.app.Application
 import com.dylanmuszel.cleanarchitectureexample.CleanArchitectureExampleApp
 import com.dylanmuszel.cleanarchitectureexample.framework.login.UserModule
-import com.dylanmuszel.cleanarchitectureexample.presentation.login.LoginModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
