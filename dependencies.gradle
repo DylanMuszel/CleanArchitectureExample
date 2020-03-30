@@ -1,0 +1,68 @@
+ext {
+    versions = [
+            kotlin  : [
+                    core      : '1.3.70',
+                    coroutines: '1.3.4'
+            ],
+            androidx: [
+                    appCompat       : '1.1.0',
+                    arch            : [
+                            lifecycle: '2.2.0'
+                    ],
+                    ktx             : [
+                            core    : '1.2.0',
+                            fragment: '1.2.3'
+                    ],
+                    constraintLayout: '1.1.3',
+                    recyclerView    : '1.1.0'
+            ],
+            dagger  : '2.25.4',
+            gson    : '2.8.6',
+            okHttp  : [
+                    interceptor: '3.9.0'
+            ],
+            retrofit: [
+                    core         : '2.8.1',
+                    converterGson: '2.2.0'
+            ]
+    ]
+
+    libraries = [
+            kotlin  : [
+                    core      : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin.core",
+                    coroutines: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.kotlin.coroutines"
+            ],
+            androidx: [
+                    appCompat       : "androidx.appcompat:appcompat:$versions.androidx.appCompat",
+                    arch            : [
+                            lifecycle: [
+                                    viewModel          : "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.androidx.arch.lifecycle",
+                                    viewModelSavedState: "androidx.lifecycle:lifecycle-viewmodel-savedstate:$versions.androidx.arch.lifecycle",
+                                    liveData           : "androidx.lifecycle:lifecycle-livedata-ktx:$versions.androidx.arch.lifecycle",
+                                    annotationProcessor: "androidx.lifecycle:lifecycle-compiler:$versions.androidx.arch.lifecycle"
+                            ]
+                    ],
+                    ktx             : [
+                            core    : "androidx.core:core-ktx:$versions.androidx.ktx.core",
+                            fragment: "androidx.fragment:fragment-ktx:$versions.androidx.ktx.fragment"
+                    ],
+                    constraintLayout: "androidx.constraintlayout:constraintlayout:$versions.androidx.constraintLayout",
+                    recyclerView    : "androidx.recyclerview:recyclerview:$versions.androidx.recyclerView"
+
+            ],
+            dagger  : [
+                    core                : "com.google.dagger:dagger:$versions.dagger",
+                    androidSupport      : "com.google.dagger:dagger-android-support:$versions.dagger",
+                    kaptCore            : "com.google.dagger:dagger-compiler:$versions.dagger",
+                    kaptAndroidProcessor: "com.google.dagger:dagger-android-processor:$versions.dagger"
+            ],
+            gson    : "com.google.code.gson:gson:$versions.gson",
+            okHttp  : [
+                    interceptor: "com.squareup.okhttp3:logging-interceptor:$versions.okHttp.interceptor"
+            ],
+            retrofit: [
+                    core         : "com.squareup.retrofit2:retrofit:$versions.retrofit.core",
+                    converterGson: "com.squareup.retrofit2:converter-gson:$versions.retrofit.converterGson"
+            ],
+    ]
+}
