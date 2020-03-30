@@ -1,6 +1,6 @@
 package com.dylanmuszel.cleanarchitectureexample.framework.login
 
-import com.dylanmuszel.core.fp.Either
+import arrow.core.Either
 import com.dylanmuszel.core.fp.Failure
 import com.dylanmuszel.data.UserSource
 import com.dylanmuszel.domain.UserEntity

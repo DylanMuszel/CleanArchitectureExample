@@ -1,10 +1,10 @@
 ext {
     versions = [
-            kotlin  : [
+            kotlin    : [
                     core      : '1.3.70',
                     coroutines: '1.3.4'
             ],
-            androidx: [
+            androidx  : [
                     appCompat       : '1.1.0',
                     arch            : [
                             lifecycle: '2.2.0'
@@ -16,23 +16,27 @@ ext {
                     constraintLayout: '1.1.3',
                     recyclerView    : '1.1.0'
             ],
-            dagger  : '2.25.4',
-            gson    : '2.8.6',
-            okHttp  : [
+            arrow     : [
+                    core: '0.10.4'
+            ],
+            dagger    : '2.25.4',
+            gson      : '2.8.6',
+            okHttp    : [
                     interceptor: '3.9.0'
             ],
-            retrofit: [
+            leakCanary: '2.2',
+            retrofit  : [
                     core         : '2.8.1',
                     converterGson: '2.2.0'
             ]
     ]
 
     libraries = [
-            kotlin  : [
+            kotlin    : [
                     core      : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin.core",
                     coroutines: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.kotlin.coroutines"
             ],
-            androidx: [
+            androidx  : [
                     appCompat       : "androidx.appcompat:appcompat:$versions.androidx.appCompat",
                     arch            : [
                             lifecycle: [
@@ -50,17 +54,21 @@ ext {
                     recyclerView    : "androidx.recyclerview:recyclerview:$versions.androidx.recyclerView"
 
             ],
-            dagger  : [
+            arrow     : [
+                    core: "io.arrow-kt:arrow-core:$versions.arrow.core"
+            ],
+            dagger    : [
                     core                : "com.google.dagger:dagger:$versions.dagger",
                     androidSupport      : "com.google.dagger:dagger-android-support:$versions.dagger",
                     kaptCore            : "com.google.dagger:dagger-compiler:$versions.dagger",
                     kaptAndroidProcessor: "com.google.dagger:dagger-android-processor:$versions.dagger"
             ],
-            gson    : "com.google.code.gson:gson:$versions.gson",
-            okHttp  : [
+            gson      : "com.google.code.gson:gson:$versions.gson",
+            okHttp    : [
                     interceptor: "com.squareup.okhttp3:logging-interceptor:$versions.okHttp.interceptor"
             ],
-            retrofit: [
+            leakCanary: "com.squareup.leakcanary:leakcanary-android:$versions.leakCanary",
+            retrofit  : [
                     core         : "com.squareup.retrofit2:retrofit:$versions.retrofit.core",
                     converterGson: "com.squareup.retrofit2:converter-gson:$versions.retrofit.converterGson"
             ],

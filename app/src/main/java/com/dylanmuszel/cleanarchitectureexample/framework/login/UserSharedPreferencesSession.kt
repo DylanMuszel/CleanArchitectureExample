@@ -1,7 +1,7 @@
 package com.dylanmuszel.cleanarchitectureexample.framework.login
 
+import arrow.core.Either
 import com.dylanmuszel.cleanarchitectureexample.framework.core.sharedpreferences.SharedPreferencesManager
-import com.dylanmuszel.core.fp.Either
 import com.dylanmuszel.core.fp.Failure
 import com.dylanmuszel.data.UserSession
 import com.dylanmuszel.domain.UserEntity

@@ -1,7 +1,7 @@
 package com.dylanmuszel.usecases.login
 
-import com.dylanmuszel.core.fp.Either
-import com.dylanmuszel.core.fp.None
+import arrow.core.Either
+import arrow.core.None
 import com.dylanmuszel.data.UserSession
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
