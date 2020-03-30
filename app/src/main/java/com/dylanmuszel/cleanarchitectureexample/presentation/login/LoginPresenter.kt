@@ -1,9 +1,9 @@
 package com.dylanmuszel.cleanarchitectureexample.presentation.login
 
+import arrow.core.None
 import com.dylanmuszel.cleanarchitectureexample.framework.login.UserNetworkSource
 import com.dylanmuszel.cleanarchitectureexample.presentation.core.BasePresenter
 import com.dylanmuszel.core.fp.Failure
-import com.dylanmuszel.core.fp.None
 import com.dylanmuszel.usecases.login.LoginUseCase
 import kotlinx.coroutines.launch
 import javax.inject.Inject

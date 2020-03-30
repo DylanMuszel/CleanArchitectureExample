@@ -1,9 +1,7 @@
 package com.dylanmuszel.cleanarchitectureexample.presentation.posts
 
-import androidx.lifecycle.viewModelScope
-import com.dylanmuszel.cleanarchitectureexample.framework.login.toUser
+import arrow.core.None
 import com.dylanmuszel.cleanarchitectureexample.presentation.core.BasePresenter
-import com.dylanmuszel.core.fp.None
 import com.dylanmuszel.domain.UserEntity
 import com.dylanmuszel.usecases.login.GetLoggedUserUseCase
 import com.dylanmuszel.usecases.login.LogoutUseCase
