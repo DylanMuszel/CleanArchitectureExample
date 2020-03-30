@@ -1,8 +1,8 @@
 package com.dylanmuszel.usecases.login
 
-import com.dylanmuszel.core.fp.Either
+import arrow.core.Either
+import arrow.core.None
 import com.dylanmuszel.core.fp.Failure
-import com.dylanmuszel.core.fp.None
 import com.dylanmuszel.data.UserRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

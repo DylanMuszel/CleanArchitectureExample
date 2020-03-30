@@ -7,14 +7,15 @@ dependencies {
 
     implementation libraries.kotlin.core
     implementation libraries.kotlin.coroutines
+    implementation libraries.arrow.core
 
     implementation libraries.dagger.core
     implementation libraries.dagger.androidSupport
     kapt libraries.dagger.kaptCore
     kapt libraries.dagger.kaptAndroidProcessor
 
-    implementation project(':entities')
     implementation project(':core')
+    implementation project(':entities')
 }
 
 sourceCompatibility = "7"
