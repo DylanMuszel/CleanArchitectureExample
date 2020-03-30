@@ -1,10 +1,10 @@
 ext {
     versions = [
-            kotlin  : [
+            kotlin    : [
                     core      : '1.3.70',
                     coroutines: '1.3.4'
             ],
-            androidx: [
+            androidx  : [
                     appCompat       : '1.1.0',
                     arch            : [
                             lifecycle: '2.2.0'
@@ -16,12 +16,13 @@ ext {
                     constraintLayout: '1.1.3',
                     recyclerView    : '1.1.0'
             ],
-            dagger  : '2.25.4',
-            gson    : '2.8.6',
-            okHttp  : [
+            dagger    : '2.25.4',
+            gson      : '2.8.6',
+            okHttp    : [
                     interceptor: '3.9.0'
             ],
-            retrofit: [
+            leakCanary: '2.2',
+            retrofit  : [
                     core         : '2.8.1',
                     converterGson: '2.2.0'
             ]
@@ -60,6 +61,7 @@ ext {
             okHttp  : [
                     interceptor: "com.squareup.okhttp3:logging-interceptor:$versions.okHttp.interceptor"
             ],
+            leakCanary: "com.squareup.leakcanary:leakcanary-android:$versions.leakCanary",
             retrofit: [
                     core         : "com.squareup.retrofit2:retrofit:$versions.retrofit.core",
                     converterGson: "com.squareup.retrofit2:converter-gson:$versions.retrofit.converterGson"
