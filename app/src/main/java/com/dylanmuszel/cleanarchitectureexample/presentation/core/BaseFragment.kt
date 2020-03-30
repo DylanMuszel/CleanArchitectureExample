@@ -11,9 +11,14 @@ import dagger.android.support.DaggerFragment
 abstract class BaseFragment<T : ViewBinding> : DaggerFragment() {
 
     private var _binding: T? = null
-    protected val binding get() = _binding!!
+    val binding get() = _binding!!
 
-    abstract val inflate: (inflater: LayoutInflater, container: ViewGroup?, attachToRoot: Boolean) -> T
+
+    abstract val inflate: (
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        attachToRoot: Boolean
+    ) -> T
 
     @CallSuper
     override fun onCreateView(
