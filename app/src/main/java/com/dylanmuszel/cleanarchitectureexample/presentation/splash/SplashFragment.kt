@@ -1,15 +1,12 @@
 package com.dylanmuszel.cleanarchitectureexample.presentation.splash
 
 import android.content.Intent
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
 import com.dylanmuszel.cleanarchitectureexample.databinding.FragmentSplashBinding
 import com.dylanmuszel.cleanarchitectureexample.presentation.core.BaseFragment
 import com.dylanmuszel.cleanarchitectureexample.presentation.login.LoginActivity
 import com.dylanmuszel.cleanarchitectureexample.presentation.posts.PostsActivity
-import javax.inject.Inject
 
 class SplashFragment private constructor() : BaseFragment<FragmentSplashBinding, SplashPresenter>(), SplashView {
 

@@ -6,12 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.lifecycle.Observer
 import com.dylanmuszel.cleanarchitectureexample.R
 import com.dylanmuszel.cleanarchitectureexample.databinding.FragmentLoginBinding
 import com.dylanmuszel.cleanarchitectureexample.presentation.core.BaseFragment
 import com.dylanmuszel.cleanarchitectureexample.presentation.posts.PostsActivity
-import javax.inject.Inject
 
 class LoginFragment private constructor() : BaseFragment<FragmentLoginBinding, LoginPresenter>(), LoginView {
 
